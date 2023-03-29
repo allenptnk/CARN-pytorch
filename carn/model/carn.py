@@ -8,7 +8,7 @@ class Block(nn.Module):
                  group=1):
         super(Block, self).__init__()
 
-        self.b1 = ops.ResidualBlock(64, 64)
+        self.b1 = ops.ResidualBlock(32, 32)
         self.b2 = ops.ResidualBlock(64, 64)
         self.b3 = ops.ResidualBlock(64, 64)
         self.c1 = ops.BasicBlock(64*2, 64, 1, 1, 0)
